@@ -31,5 +31,4 @@ For each test case, print one integer — the minimum number of candies that Mon
 ---
 
 ### Note
-In the first example, Monocarp needs to buy 2 candies. After that, he will have 9 candies, and he can give each of the three nephews 3 candies.  
-In the second example, Monocarp does not need to buy any candies, as he initially has 24 candies, and he can give each of the three nephews 8 candies.
+In the first example, Monocarp needs to buy 2 candies. After that, he will have 9 candies, and he can give each of the three nephews 3 candies. In the second example, Monocarp does not need to buy any candies, as he initially has 24 candies, and he can give each of the three nephews 8 candies.
