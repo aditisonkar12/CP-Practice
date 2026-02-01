@@ -48,17 +48,19 @@ void solve()
     cin >> n >> x;
     vll arr(n);
     arr.push_back(0);
+    
     for (int i = 0; i < n; i++) {
-        long long p;
-        cin >> p;
-        arr.push_back(p);
+        long long v;
+        cin >> v;
+        arr.push_back(v);
     }
+
     arr.push_back(x);
 
     long long max_diff = INT_MIN;
-    for (int i = 1; i < n; i++)
+    for (int i =1 ; i < arr.size(); i++)
     {
-        if (i == n - 1)
+        if (i == arr.size() - 1)
             max_diff = max(max_diff, 2 * (arr[i] - arr[i - 1]));
         else
             max_diff = max(max_diff, arr[i] - arr[i - 1]);
