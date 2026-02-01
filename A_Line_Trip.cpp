@@ -34,28 +34,43 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
-    int n,x;
+void solve()
+{
+    int n, x;
     cin >> n >> x;
-    vi arr(n);
+    vll arr(n);
     arr.push_back(0);
     input(arr, n);
     arr.push_back(x);
+
+    long long max_diff = INT_MIN;
+    for (int i = 0; i < n; i++)
+    {
+        if (i == n - 1)
+            max_diff = max(max_diff, 2 * (arr[i] - arr[i - 1]));
+        else
+            max_diff = max(max_diff, arr[i] - arr[i - 1]);
+    }
+    cout << max_diff << endl;
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
