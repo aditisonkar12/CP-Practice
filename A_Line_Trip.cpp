@@ -44,8 +44,9 @@ void solve() {
     int n,x;
     cin >> n >> x;
     vi arr(n);
+    arr.push_back(0);
     input(arr, n);
-    
+    arr.push_back(x);
 }
 
 int main() {
