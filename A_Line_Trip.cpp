@@ -45,17 +45,7 @@ void solve() {
     cin >> n >> x;
     vi arr(n);
     input(arr, n);
-    sort(arr.begin(), arr.end());
-    int cnt = 0;
-    for (int i = n - 1; i >= 0; i--) {
-        if (arr[i] <= x) {
-            x -= arr[i];
-            cnt++;
-        } else {
-            break;
-        }
-    }
-    cout << cnt << endl;
+    
 }
 
 int main() {
