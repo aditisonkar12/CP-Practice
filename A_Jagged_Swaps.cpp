@@ -48,15 +48,21 @@ void solve() {
 
     vi sorted_arr = arr;
     sort(sorted_arr.begin(), sorted_arr.end());
-    
-    int swaps = 0;
-    for (int i = 0; i < n - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            swap(arr[i], arr[i + 1]);
-            swaps++;
+
+    vector<int> diff;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != sorted_arr[i]) {
+            diff.push_back(i);
         }
     }
-    cout << swaps << endl;
+
+    if(diff.empty()) {
+        cout << "YES\n";
+    }else if(diff.size()==2 && diff[1]==diff[0]+1) {
+        cout << "YES\n";
+    }else{
+        cout << "NO\n";
+    }
 }
 
 int main() {
