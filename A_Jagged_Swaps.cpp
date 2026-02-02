@@ -43,26 +43,12 @@ void input(vector<T> &arr, int n) {
 void solve() {
     int n;
     cin>>n;
-    vi arr(n);
-    input(arr, n);
+    vi a(n);
+    input(a, n);
 
-    vi sorted_arr = arr;
-    sort(sorted_arr.begin(), sorted_arr.end());
-
-    vector<int> diff;
-    for (int i = 0; i < n; i++) {
-        if (arr[i] != sorted_arr[i]) {
-            diff.push_back(i);
-        }
-    }
-
-    if(diff.empty()) {
-        cout << "YES\n";
-    }else if(diff.size()==2 && diff[1]==diff[0]+1) {
-        cout << "YES\n";
-    }else{
-        cout << "NO\n";
-    }
+    int mn = *min_element(a.begin(), a.end());
+    if (a[0] == mn) cout << "YES\n";
+    else cout << "NO\n";
 }
 
 int main() {
