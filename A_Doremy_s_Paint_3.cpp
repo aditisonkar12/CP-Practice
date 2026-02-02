@@ -41,7 +41,24 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
-    
+    int n;
+    cin>>n;
+    vi a(n);
+    input(a, n);
+    for(int i=0;i<n;i++){
+        if(i%2==0){
+            if(a[i]%2!=0){
+                cout<<"NO\n";
+                return;
+            }
+        }
+        else{
+            if(a[i]%2==0){
+                cout<<"NO\n";
+                return;
+            }
+        }
+    }
 }
 
 int main() {
