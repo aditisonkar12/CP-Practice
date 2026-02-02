@@ -45,6 +45,10 @@ void solve() {
     cin>>n;
     vi arr(n);
     input(arr, n);
+
+    vi sorted_arr = arr;
+    sort(sorted_arr.begin(), sorted_arr.end());
+    
     int swaps = 0;
     for (int i = 0; i < n - 1; i++) {
         if (arr[i] > arr[i + 1]) {
