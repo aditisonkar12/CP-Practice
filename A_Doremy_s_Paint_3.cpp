@@ -48,11 +48,11 @@ void solve() {
     int sum=a[0]+a[1];
     for(int i=1;i<n;i++){
         if(a[i]+a[i-1] != sum){
-            cout<<"NO\n";
+            cout<<"No\n";
             break;
         }
     }
-    cout<<"YES\n";
+    cout<<"Yes\n";
 }
 
 int main() {
