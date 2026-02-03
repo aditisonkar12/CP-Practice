@@ -50,12 +50,6 @@ void solve()
     vll a(n);
     input(a, n);
 
-    if (n <= 3)
-    {
-        cout << "Yes\n";
-        return;
-    }
-
     bool ok = true;
     long long sum = a[0] + a[1];
     for (int i = 2; i < n; i++)
