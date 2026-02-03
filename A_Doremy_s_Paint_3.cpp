@@ -48,7 +48,7 @@ void solve() {
     input(a, n);
     
     si s(a.begin(), a.end());
-    if (s.size() <= n){
+    if (s.size() <= 2){
         cout << "Yes\n";
         return;
     } 
