@@ -56,18 +56,25 @@ void solve()
         freq[val]++;
     }
 
-    if(freq.size() >= 3)
+    if (freq.size() >= 3)
     {
         cout << "No\n";
         return;
-    }else{
-        ll f1=freq.begin()->second;
-        ll f2=freq.rbegin()->second;
-        if(f1==f2){
+    }
+    else
+    {
+        ll f1 = freq.begin()->second;
+        ll f2 = freq.rbegin()->second;
+        if (f1 == f2)
+        {
             cout << "Yes\n";
-        }else if(n%2 == 1 && abs(f1-f2)==1){
+        }
+        else if (n % 2 == 1 && abs(f1 - f2) == 1)
+        {
             cout << "Yes\n";
-        }else{
+        }
+        else
+        {
             cout << "No\n";
         }
     }
