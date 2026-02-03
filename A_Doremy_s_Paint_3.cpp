@@ -50,31 +50,27 @@ void solve()
     vll a(n);
     input(a, n);
 
-    bool ok = true;
-    long long sum = a[0] + a[1];
-    for (int i = 1; i < n; i++)
+    map<ll, ll> freq;
+    for (ll val : a)
     {
-        if (a[i] + a[i - 1] != sum)
-        {
-            ok = false;
-            break;
-        }
+        freq[val]++;
     }
 
-    if (ok)
+    if(freq.size() >= 3)
     {
-        cout << "Yes\n";
+        cout << "No\n";
         return;
-    }
-
-    for (int i = 2; i < n; i++) {
-        if (a[i] != a[i - 2]) {
+    }else{
+        ll f1=freq.begin()->second;
+        ll f2=freq.rbegin()->second;
+        if(f1==f2){
+            cout << "Yes\n";
+        }else if(n%2 == 1 && abs(f1-f2)==1){
+            cout << "Yes\n";
+        }else{
             cout << "No\n";
-            return;
         }
     }
-
-    cout << "Yes\n";
 }
 
 int main()
