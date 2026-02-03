@@ -52,7 +52,7 @@ void solve() {
             break;
         }
     }
-    cout<<"YES\n";{
+    cout<<"YES\n";
 }
 
 int main() {
