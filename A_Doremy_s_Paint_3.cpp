@@ -28,6 +28,7 @@ using namespace std;
 #define pll pair<long long, long long>
 #define mii map<int, int>
 #define si set<int>
+#define si set<long long>
 #define sc set<char>
 
 const ll MOD = 1e9 + 7;
@@ -43,16 +44,10 @@ void input(vector<T> &arr, int n) {
 void solve() {
     int n;
     cin>>n;
-    vi a(n);
+    vll a(n);
     input(a, n);
-    int sum=a[0]+a[1];
-    for(int i=1;i<n;i++){
-        if(a[i]+a[i-1] != sum){
-            cout<<"No\n";
-            break;
-        }
-    }
-    cout<<"Yes\n";
+    
+    set
 }
 
 int main() {
