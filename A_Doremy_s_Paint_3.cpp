@@ -45,20 +45,14 @@ void solve() {
     cin>>n;
     vi a(n);
     input(a, n);
-    for(int i=0;i<n;i++){
-        if(i%2==0){
-            if(a[i]%2!=0){
-                cout<<"NO\n";
-                return;
-            }
-        }
-        else{
-            if(a[i]%2==0){
-                cout<<"NO\n";
-                return;
-            }
+    int sum=a[0]+a[1];
+    for(int i=1;i<n;i++){
+        if(a[i]+a[i-1] != sum){
+            cout<<"NO\n";
+            break;
         }
     }
+    cout<<"YES\n";{
 }
 
 int main() {
