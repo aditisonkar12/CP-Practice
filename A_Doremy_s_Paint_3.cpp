@@ -66,11 +66,21 @@ void solve()
             break;
         }
     }
+
     if (ok)
     {
         cout << "Yes\n";
         return;
     }
+
+    for (int i = 2; i < n; i++) {
+        if (a[i] != a[i - 2]) {
+            cout << "No\n";
+            return;
+        }
+    }
+
+    cout << "Yes\n";
 }
 
 int main()
