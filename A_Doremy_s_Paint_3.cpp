@@ -47,7 +47,20 @@ void solve() {
     vll a(n);
     input(a, n);
     
-    set
+    si s(a.begin(), a.end());
+    if (s.size() <= n){
+        cout << "Yes\n";
+        return;
+    } 
+
+    long long sum=a[0]+a[1];
+    for(int i=1;i<n;i++){
+        if(a[i]+a[i-1] != sum){
+            cout << "No\n";
+            return;
+        }
+    }
+    cout << "Yes\n";
 }
 
 int main() {
