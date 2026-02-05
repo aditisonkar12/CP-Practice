@@ -43,7 +43,10 @@ void input(vector<T> &arr, int n) {
 void solve() {
     long long n,m;
     cin>>n>>m;
-    
+    string x;
+    cin>>x;
+    string s;
+    cin>>s;
 }
 
 int main() {
