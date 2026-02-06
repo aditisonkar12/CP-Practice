@@ -41,7 +41,18 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
-    
+    int score=0;
+    for(int i=0;i<10;i++){
+        string row;
+        cin>>row;
+        for(int j=0;j<10;j++){
+            if(row[j]=='X'){
+                int ring=min({i,j,9-i,9-j});
+                score+=ring;
+            }
+        }
+    }
+    cout<<score<<"\n";
 }
 
 int main() {
