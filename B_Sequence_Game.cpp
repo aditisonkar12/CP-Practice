@@ -49,7 +49,22 @@ void solve() {
 
     vector<long long> a;
     a.push_back(b[0]);
-    
+
+    for(int i=1;i<n;i++){
+        if(b[i]>b[i-1]){
+            a.push_back(b[i]);
+        }
+        else{
+            a.push_back(1);
+            a.push_back(b[i]);
+        }
+    }
+    cout<<a.size()<<"\n";
+
+    for(auto x:a){
+        cout<<x<<" ";
+    }
+    cout<<"\n";
 }
 
 int main() {
