@@ -48,13 +48,15 @@ void solve() {
     string s;
     cin>>s;
 
-    if(x.find(s)){
+    if(x.find(s) != string::npos){
         cout<<0<<"\n";
+        return;
     }
 
     int cnt=0;
     while((int)x.size()<=2*m){
-        
+        x+=x;
+        cnt++;
     }
 }
 
