@@ -61,8 +61,16 @@ void solve()
         }
         else
         {
-            a.push_back(1);
-            a.push_back(b[i]);
+            if (b[i] == 1)
+            {
+                a.push_back(1);
+                a.push_back(1);
+            }
+            else
+            {
+                a.push_back(1);
+                a.push_back(b[i]);
+            }
         }
     }
     cout << a.size() << "\n";
