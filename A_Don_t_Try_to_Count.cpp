@@ -47,6 +47,11 @@ void solve() {
     cin>>x;
     string s;
     cin>>s;
+
+    if(x.find(s)){
+        cout<<0<<"\n";
+        continue;
+    }
 }
 
 int main() {
