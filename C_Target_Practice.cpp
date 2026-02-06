@@ -48,7 +48,7 @@ void solve() {
         for(int j=0;j<10;j++){
             if(row[j]=='X'){
                 int ring=min({i,j,9-i,9-j});
-                score+=ring;
+                score+=ring+1;
             }
         }
     }
