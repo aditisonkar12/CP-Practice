@@ -46,6 +46,12 @@ void solve() {
 
     vi a(n-1);
     input(a,n-1);
+
+    long long sum=0;
+    for(int i=0;i<n-1;i++){
+        sum+=a[i];
+    }
+    cout<<-sum<<"\n";
 }
 
 int main() {
