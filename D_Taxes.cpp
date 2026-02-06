@@ -44,7 +44,7 @@ void input(vector<T> &arr, int n)
 
 void solve()
 {
-    int n;
+    long long n;
     cin >> n;
 
     for(long long i=2;i*i<=n;i++){
