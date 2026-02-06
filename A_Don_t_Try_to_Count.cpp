@@ -50,7 +50,11 @@ void solve() {
 
     if(x.find(s)){
         cout<<0<<"\n";
-        continue;
+    }
+
+    int cnt=0;
+    while((int)x.size()<=2*m){
+        
     }
 }
 
