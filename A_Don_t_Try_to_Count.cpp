@@ -57,7 +57,13 @@ void solve() {
     while((int)x.size()<=2*m){
         x+=x;
         cnt++;
+
+        if(x.find(s) != string::npos){
+            cout<<cnt<<"\n";
+            return;
+        }
     }
+    cout<<-1<<"\n";
 }
 
 int main() {
