@@ -59,28 +59,33 @@ void solve()
     long long n;
     cin >> n;
 
-    if(n==1){
-        cout<<1<<"\n";
+    if (n == 1)
+    {
+        cout << 1 << "\n";
         return;
     }
 
-    if(isPrime(n)){
-        cout<<1<<"\n";
+    if (isPrime(n))
+    {
+        cout << 1 << "\n";
         return;
     }
 
-    if(n%2==0){
-        cout<<2<<"\n";
+    if (n % 2 == 0)
+    {
+        cout << 2 << "\n";
         return;
     }
 
-    if(isPrime(n-2)){
-        cout<<2<<"\n";
+    if (isPrime(n - 2))
+    {
+        cout << 2 << "\n";
         return;
     }
-    
-    else{
-        cout<<3<<"\n";
+
+    else
+    {
+        cout << 3 << "\n";
         return;
     }
 }
