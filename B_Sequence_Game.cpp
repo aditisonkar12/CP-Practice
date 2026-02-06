@@ -51,7 +51,7 @@ void solve() {
     a.push_back(b[0]);
 
     for(int i=1;i<n;i++){
-        if(b[i]>b[i-1]){
+        if(b[i]>=b[i-1]){
             a.push_back(b[i]);
         }
         else{
