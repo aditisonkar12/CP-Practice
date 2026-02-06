@@ -46,6 +46,10 @@ void solve() {
 
     vll b(n);
     input (b,n);
+
+    vector<long long> a;
+    a.push_back(b[0]);
+    
 }
 
 int main() {
