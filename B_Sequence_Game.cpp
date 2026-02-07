@@ -16,7 +16,6 @@
 #include <numeric>
 #include <climits>
 #include <cassert>
-
 using namespace std;
 
 #define ll long long
