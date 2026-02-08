@@ -51,26 +51,29 @@ void solve()
         cin >> x;
 
     sort(a.begin(), a.end());
-
     long long mn = a[0];
-    int cnt = 0;
-    for (auto x : a)
-        if (x == mn)
-            cnt++;
 
-    if (cnt == n)
+    vector<long long> b, c;
+    for (auto x : a)
+    {
+        if (x % mn == 0)
+            b.push_back(x);
+        else
+            c.push_back(x);
+    }
+
+    if (b.empty() || c.empty())
     {
         cout << -1 << '\n';
         return;
     }
 
-    cout << cnt << " " << n - cnt << '\n';
-    for (int i = 0; i < cnt; i++)
-        cout << mn << " ";
+    cout << b.size() << " " << c.size() << '\n';
+    for (auto x : b)
+        cout << x << " ";
     cout << '\n';
-
-    for (int i = cnt; i < n; i++)
-        cout << a[i] << " ";
+    for (auto x : c)
+        cout << x << " ";
     cout << '\n';
 }
 
