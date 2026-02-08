@@ -41,7 +41,31 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
-    
+    int n;
+        cin >> n;
+        vector<long long> a(n);
+        for (auto &x : a) cin >> x;
+
+        sort(a.begin(), a.end());
+
+        long long mn = a[0];
+        int cnt = 0;
+        for (auto x : a)
+            if (x == mn) cnt++;
+
+        if (cnt == n) {
+            cout << -1 << '\n';
+            continue;
+        }
+
+        cout << cnt << " " << n - cnt << '\n';
+        for (int i = 0; i < cnt; i++)
+            cout << mn << " ";
+        cout << '\n';
+
+        for (int i = cnt; i < n; i++)
+            cout << a[i] << " ";
+        cout << '\n';
 }
 
 int main() {
