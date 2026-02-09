@@ -57,13 +57,11 @@ void solve()
     for (auto x : a)
         if (x == mn)
             cnt++;
-
     if (cnt == n)
     {
         cout << -1 << '\n';
         return;
     }
-
     cout << cnt << " " << n - cnt << '\n';
     for (int i = 0; i < cnt; i++)
         cout << mn << " ";
