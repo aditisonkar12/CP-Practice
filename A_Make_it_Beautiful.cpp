@@ -58,11 +58,13 @@ void solve() {
 
     if(ok){
         cout<<"NO\n";
+        return;
     }
 
     sort(a.begin(),a.end());
+
     cout<<"YES\n";
-    cout<<a[0]<<" "<<a[n-1]<<"\n";
+    cout<<a[0]<<" "<<a[n-1]<<" ";
 
     for(int i=1;i<n-1;i++){
         cout<<a[i]<<" ";
