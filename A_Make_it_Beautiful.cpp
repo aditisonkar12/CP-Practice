@@ -41,6 +41,11 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
+    int n;
+    cin>>n;
+    vector<long long> a(n);
+    for (auto &x : a) cin>>x;
+
     
 }
 
