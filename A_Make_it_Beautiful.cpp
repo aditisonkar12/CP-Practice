@@ -44,7 +44,9 @@ void solve() {
     int n;
     cin>>n;
     vector<long long> a(n);
-    for (auto &x : a) cin>>x;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
 
     bool ok=true;
     for(int i=1;i<n;i++){
