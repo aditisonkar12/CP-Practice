@@ -55,8 +55,10 @@ void solve() {
     }
 
     if(ok){
-        
+        cout<<"NO\n";
     }
+
+    sort(a.begin(),a.end());
 }
 
 int main() {
