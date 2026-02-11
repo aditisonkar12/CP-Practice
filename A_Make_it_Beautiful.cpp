@@ -46,7 +46,17 @@ void solve() {
     vector<long long> a(n);
     for (auto &x : a) cin>>x;
 
-    
+    bool ok=true;
+    for(int i=1;i<n;i++){
+        if(a[i]!=a[0]){
+            ok=false;
+            break;
+        }
+    }
+
+    if(ok){
+        
+    }
 }
 
 int main() {
