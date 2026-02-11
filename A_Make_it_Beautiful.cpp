@@ -59,6 +59,10 @@ void solve() {
     }
 
     sort(a.begin(),a.end());
+    cout<<"YES\n";
+    cout<<a[0]<<" "<<a[n-1]<<"\n";
+
+    
 }
 
 int main() {
