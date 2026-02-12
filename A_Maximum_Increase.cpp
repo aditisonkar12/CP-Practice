@@ -32,8 +32,8 @@ using namespace std;
 
 const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
-
 template <typename T>
+
 void input(vector<T> &arr, int n)
 {
     for (int i = 0; i < n; i++)
