@@ -41,6 +41,17 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
+    int n;
+    cin >> n;
+
+    int count = 0;
+    for (int p = 1; p <= n; p *= 10) {
+        for (int d = 1; d <= 9; d++) {
+            if (d * p <= n)
+                count++;
+        }
+    }
+    cout << count << '\n';
 }
 int main() {
     ios::sync_with_stdio(false);
