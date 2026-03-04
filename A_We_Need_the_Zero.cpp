@@ -46,21 +46,20 @@ void solve()
 {
     int n;
     cin >> n;
-    int x = 0, a;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> a;
-        x ^= a;
+    vector<int> a(n);
+    int x = 0;
+
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+        x ^= a[i];
     }
 
-    if (n % 2)
+    if (n % 2) {
         cout << x << "\n";
-    else
-    {
-        if (x == 0)
-            cout << 0 << "\n";
-        else
-            cout << -1 << "\n";
+    } 
+    else {
+        if (x != 0) cout << -1 << "\n";
+        else cout << a[0] << "\n";
     }
 }
 
