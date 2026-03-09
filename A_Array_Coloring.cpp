@@ -48,7 +48,8 @@ void solve() {
     for(int i=0;i<n;i++){
         int x;
         cin>>x;
-        
+
+        if(x%2) odd++;
     }
 }
 
