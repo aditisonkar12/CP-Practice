@@ -48,13 +48,11 @@ void solve() {
     for(int i=0;i<n;i++){
         int x;
         cin>>x;
-
-        if(x%2) odd++;
+        sum+=x;
     }
 
-    if(odd==n) cout<<"NO\n";
-    else if(n==2 && odd==1) cout<<"NO\n";
-    else cout<<"YES\n";
+    if(sum % 2 == 0) cout << "YES\n";
+    else cout << "NO\n";
 }
 
 int main() {
