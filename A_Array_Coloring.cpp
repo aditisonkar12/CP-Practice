@@ -51,6 +51,8 @@ void solve() {
 
         if(x%2) odd++;
     }
+
+    if(odd==n) cout<<"NO\n";
 }
 
 int main() {
