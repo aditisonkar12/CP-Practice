@@ -53,6 +53,8 @@ void solve() {
     }
 
     if(odd==n) cout<<"NO\n";
+    else if(n==2 && odd==1) cout<<"NO\n";
+    else cout<<"YES\n";
 }
 
 int main() {
