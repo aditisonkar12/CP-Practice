@@ -66,7 +66,7 @@ void solve() {
         ans=min(ans,temp/2+1);
     }
 
-    cout<<ans<<"\n"
+    cout<<ans<<"\n";
 }
 
 int main() {
