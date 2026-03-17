@@ -54,6 +54,11 @@ void solve() {
             break;
         }
     }
+
+    if(!sorted) {
+        cout<<0<<"\n";
+        continue;
+    }
 }
 
 int main() {
