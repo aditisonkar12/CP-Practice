@@ -57,7 +57,6 @@ void solve() {
 
     if(!sorted) {
         cout<<0<<"\n";
-        continue;
     }
 
     int ans=1e9;
