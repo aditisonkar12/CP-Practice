@@ -63,7 +63,10 @@ void solve() {
     int ans=1e9;
     for(int i=0; i<n-1; i++) {
         int temp=arr[i+1]-arr[i];
+        ans=min(ans,temp/2+1);
     }
+
+    cout<<ans<<"\n"
 }
 
 int main() {
