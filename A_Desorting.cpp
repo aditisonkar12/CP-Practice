@@ -43,6 +43,17 @@ void input(vector<T> &arr, int n) {
 void solve() {
     int n;
     cin>>n;
+    vi arr(n);
+    input(arr, n);
+
+    bool sorted = true;
+
+    for(int i=0; i<n-1; i++) {
+        if(arr[i] > arr[i+1]) {
+            sorted = false;
+            break;
+        }
+    }
 }
 
 int main() {
