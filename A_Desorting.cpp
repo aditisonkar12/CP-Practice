@@ -59,6 +59,11 @@ void solve() {
         cout<<0<<"\n";
         continue;
     }
+
+    int ans=1e9;
+    for(int i=0; i<n-1; i++) {
+        int temp=arr[i+1]-arr[i];
+    }
 }
 
 int main() {
