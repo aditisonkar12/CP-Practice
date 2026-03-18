@@ -52,6 +52,11 @@ void solve() {
     if((a+c)%(2*b)==0) {
         check=true;
     }
+    if((2*b-a)>0 && (2*b-a)%c==0) {
+        check=true;
+    }
+
+    cout<<(check?"YES":"NO")<<"\n";
 }
 
 int main() {
