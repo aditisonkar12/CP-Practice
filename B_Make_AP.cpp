@@ -43,6 +43,13 @@ void input(vector<T> &arr, int n) {
 void solve() {
     long long a,b,c;
     cin>>a>>b>>c;
+
+    bool check=false;
+
+    if((2*b-c)>0 && (2*b-c)%a==0) {
+        check=true;
+    }
+    
 }
 
 int main() {
