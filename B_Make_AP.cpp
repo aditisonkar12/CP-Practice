@@ -49,7 +49,9 @@ void solve() {
     if((2*b-c)>0 && (2*b-c)%a==0) {
         check=true;
     }
-    
+    if((a+c)%2==0 && (a+c)/2%b==0) {
+        check=true;
+    }
 }
 
 int main() {
