@@ -47,6 +47,11 @@ void solve()
     long long n;
     cin >> n;
 
+    if(n==1){
+        cout<<0<<"\n";
+        return;
+    }
+
     long long ans = 0;
 
     while (n != 1)
@@ -65,7 +70,7 @@ void solve()
         if (ans > 100)
         {
             cout << -1 << "\n";
-            break;
+            return;
         }
     }
     cout << ans << "\n";
