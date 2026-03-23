@@ -43,7 +43,23 @@ void input(vector<T> &arr, int n) {
 void solve() {
     long long n;
     cin>>n;
-    
+
+    long long ans=0;
+
+    while(n!=1){
+        if(n%6==0){
+            n/=6;
+            ans++;
+        }else{
+            n*=2;
+            ans++;
+        }
+    }
+    if(ans>100){
+        cout<<-1<<"\n";
+    }else{
+        cout<<ans<<"\n";
+    }
 }
 
 int main() {
