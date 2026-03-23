@@ -54,12 +54,13 @@ void solve() {
             n*=2;
             ans++;
         }
+
+        if(ans>100){
+            cout<<-1<<"\n";
+            break;
+        }
     }
-    if(ans>100){
-        cout<<-1<<"\n";
-    }else{
         cout<<ans<<"\n";
-    }
 }
 
 int main() {
