@@ -52,6 +52,8 @@ void solve()
         return;
     }
 
+    
+
     long long ans = 0;
 
     while (n != 1)
