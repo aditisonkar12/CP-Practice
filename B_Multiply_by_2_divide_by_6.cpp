@@ -47,12 +47,11 @@ void solve()
     long long n;
     cin >> n;
 
-    if(n==1){
-        cout<<0<<"\n";
+    if (n == 1)
+    {
+        cout << 0 << "\n";
         return;
     }
-
-    
 
     long long ans = 0;
 
