@@ -48,13 +48,14 @@ void solve()
     cin >> n;
 
     vll a(n);
-    input(a,n);
+    input(a, n);
 
-    long long ans=a[0];
-    for(int i=1;i<n;i++){
-        ans&=a[i];
+    long long ans = a[0];
+    for (int i = 1; i < n; i++)
+    {
+        ans &= a[i];
     }
-    cout<<ans<<"\n";
+    cout << ans << "\n";
 }
 
 int main()
