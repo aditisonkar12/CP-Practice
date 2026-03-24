@@ -50,7 +50,7 @@ void solve()
     vll a(n);
     input(a,n);
 
-    int ans;
+    long long ans=a[0];
     for(int i=1;i<n;i++){
         ans&=a[i];
     }
