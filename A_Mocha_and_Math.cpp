@@ -46,6 +46,10 @@ void solve()
 {
     long long n;
     cin >> n;
+
+    vll a(n);
+    input(a,n);
+    
 }
 
 int main()
