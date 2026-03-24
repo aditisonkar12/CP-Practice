@@ -43,6 +43,8 @@ void input(vector<T> &arr, int n) {
 void solve() {
     long long a,b,n;
     cin>>a>>b>>n;
+
+    long long ans=b;
 }
 
 int main() {
