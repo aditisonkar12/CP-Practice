@@ -49,7 +49,12 @@ void solve()
 
     vll a(n);
     input(a,n);
-    
+
+    int ans;
+    for(int i=1;i<n;i++){
+        ans&=a[i];
+    }
+    cout<<ans<<"\n";
 }
 
 int main()
