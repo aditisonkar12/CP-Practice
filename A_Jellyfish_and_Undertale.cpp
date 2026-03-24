@@ -45,6 +45,13 @@ void solve() {
     cin>>a>>b>>n;
 
     long long ans=b;
+
+    for(int i=0;i<n;i++){
+        long long x;
+        cin>>x;
+        ans+=min(x,a-1);
+    }
+    cout<<ans<<
 }
 
 int main() {
