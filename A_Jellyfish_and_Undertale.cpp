@@ -51,7 +51,7 @@ void solve() {
         cin>>x;
         ans+=min(x,a-1);
     }
-    cout<<ans<<
+    cout<<ans<<"\n";
 }
 
 int main() {
