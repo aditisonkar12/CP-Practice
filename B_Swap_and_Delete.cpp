@@ -51,6 +51,15 @@ void solve() {
         if(c=='0') zeroes++;
         else ones++;
     }
+
+    for(int k=n;k>=1;k--){
+        int c0=0;
+        for(int i=0;i<k;i++){
+            if(s[i]=='0') c0++;
+        }
+
+        
+    }
 }
 
 int main() {
