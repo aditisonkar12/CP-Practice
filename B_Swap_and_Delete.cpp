@@ -44,6 +44,13 @@ void solve() {
     string s;
     cin>>s;
     int n=s.length();
+
+    int zeroes=0,ones=0;
+
+    for(char c: s){
+        if(c=='0') zeroes++;
+        else ones++;
+    }
 }
 
 int main() {
