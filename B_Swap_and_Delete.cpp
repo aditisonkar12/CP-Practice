@@ -64,6 +64,7 @@ void solve() {
             return;
         }
     }
+    cout<<n<<"\n";
 }
 
 int main() {
