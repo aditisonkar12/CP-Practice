@@ -59,20 +59,16 @@ void solve()
     }
 
     vector<int> prefixZeroes(n + 1, 0);
-    for(int i=0;i<n;i++){
-        prefixZeroes[i+1]=prefixZeroes[i]+(s[i]=='0'?1:0);
+    for (int i = 0; i < n; i++)
+    {
+        prefixZeroes[i + 1] = prefixZeroes[i] + (s[i] == '0' ? 1 : 0);
     }
 
     for (int k = n; k >= 1; k--)
     {
-        int c0 = 0;
-        for (int i = 0; i < k; i++)
-        {
-            if (s[i] == '0')
-                c0++;
-        }
-
+        int c0 = prefixZeroes[k];
         int c1 = k - c0;
+
         if (zeroes >= c1 && ones >= c0)
         {
             cout << n - k << "\n";
