@@ -58,6 +58,9 @@ void solve()
             ones++;
     }
 
+    vector<int> prefixZeroes(n + 1, 0);
+    
+
     for (int k = n; k >= 1; k--)
     {
         int c0 = 0;
