@@ -59,7 +59,9 @@ void solve()
     }
 
     vector<int> prefixZeroes(n + 1, 0);
-    
+    for(int i=0;i<n;i++){
+        prefixZeroes[i+1]=prefixZeroes[i]+(s[i]=='0'?1:0);
+    }
 
     for (int k = n; k >= 1; k--)
     {
