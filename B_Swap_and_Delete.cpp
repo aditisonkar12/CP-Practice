@@ -58,7 +58,11 @@ void solve() {
             if(s[i]=='0') c0++;
         }
 
-        
+        int c1=k-c0;
+        if(zeroes>=c1 && ones>=c0){
+            cout<<n-k<<"\n";
+            return;
+        }
     }
 }
 
