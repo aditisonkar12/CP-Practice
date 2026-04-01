@@ -75,9 +75,21 @@ void solve()
             result.push_back(index);
         }
         else{
-            
+            auto it=dq.begin();
+            while(it!=dq.end() ){
+                if(it->first<health){
+                    break;
+                }
+                if(it->first==health && it->second>index){
+                    break;
+                }
+                ++it;
+            }
+            dq.insert(it, {health, index});
         }
     }
+
+    
 }
 
 int main()
