@@ -57,10 +57,11 @@ void solve()
 
     sort(dq.begin(), dq.end(), [](const pair<long long, long long> &a, const pair<long long, long long> &b)
          { 
-        if(a.first == b.first) {
-            return a.second < b.second;
-        }
-        return a.first > b.first; });
+        if(a.first != b.first) 
+            return a.first < b.first;
+            
+        return a.second < b.second; 
+    });
 }
 
 int main()
