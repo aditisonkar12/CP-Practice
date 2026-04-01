@@ -60,27 +60,31 @@ void solve()
         if(a.first != b.first) 
             return a.first < b.first;
             
-        return a.second < b.second; 
-    });
+        return a.second < b.second; });
 
     vector<long long> result;
 
-    while(!dq.empty())
+    while (!dq.empty())
     {
         auto [health, index] = dq.front();
         dq.pop_front();
 
         health -= k;
-        if(health<=0){
+        if (health <= 0)
+        {
             result.push_back(index);
         }
-        else{
-            auto it=dq.begin();
-            while(it!=dq.end() ){
-                if(it->first<health){
+        else
+        {
+            auto it = dq.begin();
+            while (it != dq.end())
+            {
+                if (it->first < health)
+                {
                     break;
                 }
-                if(it->first==health && it->second>index){
+                if (it->first == health && it->second > index)
+                {
                     break;
                 }
                 ++it;
@@ -89,11 +93,13 @@ void solve()
         }
     }
 
-    for(long long i=0; i<result.size(); i++){
-        if(i>0) cout<<" ";
-        cout<<result[i];
+    for (long long i = 0; i < result.size(); i++)
+    {
+        if (i > 0)
+            cout << " ";
+        cout << result[i];
     }
-    cout<<"\n";
+    cout << "\n";
 }
 
 int main()
