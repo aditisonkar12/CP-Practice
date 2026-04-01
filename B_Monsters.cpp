@@ -69,6 +69,14 @@ void solve()
     {
         auto [health, index] = dq.front();
         dq.pop_front();
+
+        health -= k;
+        if(health<=0){
+            result.push_back(index);
+        }
+        else{
+            
+        }
     }
 }
 
