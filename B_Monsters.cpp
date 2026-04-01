@@ -62,6 +62,14 @@ void solve()
             
         return a.second < b.second; 
     });
+
+    vector<long long> result;
+
+    while(!dq.empty())
+    {
+        auto [health, index] = dq.front();
+        dq.pop_front();
+    }
 }
 
 int main()
