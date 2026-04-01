@@ -43,8 +43,13 @@ void input(vector<T> &arr, int n) {
 void solve() {
     long long n,k;
     cin >> n >> k;
-    vector<long long> a(n);
-    input(a, n);
+    
+    deque<pair<long long, long long>> dq;
+    for(long long i = 0; i < n; i++) {
+        long long x;
+        cin >> x;
+        dq.push_back({x, i+1});
+    }
 }
 
 int main() {
