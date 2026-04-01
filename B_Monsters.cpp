@@ -89,7 +89,11 @@ void solve()
         }
     }
 
-    
+    for(long long i=0; i<result.size(); i++){
+        if(i>0) cout<<" ";
+        cout<<result[i];
+    }
+    cout<<"\n";
 }
 
 int main()
