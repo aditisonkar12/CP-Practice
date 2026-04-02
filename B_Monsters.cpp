@@ -49,20 +49,23 @@ void solve()
 
     vector<pair<long long, long long>> monsters;
 
-    for(long long i=1;i<=n;i++){
+    for (long long i = 1; i <= n; i++)
+    {
         long long x;
-        cin>>x;
+        cin >> x;
 
-        long long val=x%k;
-        if(val==0) val=k;
+        long long val = x % k;
+        if (val == 0)
+            val = k;
 
         monsters.push_back({val, i});
     }
 
-    sort(monsters.begin(),monsters.end(),[](auto &a, auto &b)){
-        if(a.first!=b.first) return a.first>b.first;
-        return a.second<b.second;
-    });
+    sort(monsters.begin(), monsters.end(), [](auto &a, auto &b)
+         {
+        if (a.first != b.first)
+            return a.first > b.first;
+        return a.second < b.second; });
 }
 
 int main()
