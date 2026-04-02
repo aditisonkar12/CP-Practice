@@ -66,6 +66,12 @@ void solve()
         if (a.first != b.first)
             return a.first > b.first;
         return a.second < b.second; });
+
+    for(auto &monster : monsters)
+    {
+        cout << monster.second << " ";
+    }
+    cout<<"\n";
 }
 
 int main()
