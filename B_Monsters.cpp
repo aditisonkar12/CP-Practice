@@ -42,12 +42,13 @@ void input(vector<T> &arr, int n)
     }
 }
 
-struct cmp {
+struct cmp
+{
     bool operator()(const pair<ll, int> &a, const pair<ll, int> &b) const
     {
         if (a.first != b.first)
-            return a.first > b.first; 
-        return a.second < b.second;   
+            return a.first > b.first;
+        return a.second < b.second;
     }
 };
 
@@ -56,12 +57,12 @@ void solve()
     long long n, k;
     cin >> n >> k;
 
-    set<pair<long long, long long>,cmp> s;
+    set<pair<long long, long long>, cmp> s;
     for (long long i = 1; i <= n; i++)
     {
         long long x;
         cin >> x;
-       s.insert({x, i});
+        s.insert({x, i});
     }
 
     vector<long long> result;
@@ -72,7 +73,7 @@ void solve()
         s.erase(s.begin());
 
         health -= k;
-        
+
         if (health <= 0)
         {
             result.push_back(index);
