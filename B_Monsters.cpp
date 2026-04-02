@@ -58,7 +58,12 @@ void solve()
     cin >> n >> k;
 
     vector<pair<long long, long long>> monsters;
-    
+
+    for(long long i=1;i<=n;i++){
+        long long x;
+        cin>>x;
+        
+    }
 }
 
 int main()
