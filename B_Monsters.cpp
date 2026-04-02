@@ -42,12 +42,21 @@ void input(vector<T> &arr, int n)
     }
 }
 
+struct Cmp {
+    bool operator()(const pair<ll, int> &a, const pair<ll, int> &b) const
+    {
+        if (a.first != b.first)
+            return a.first > b.first; 
+        return a.second < b.second;   
+    }
+};
+
 void solve()
 {
     long long n, k;
     cin >> n >> k;
 
-    deque<pair<long long, long long>> dq;
+    set<pair<long long, long long>,cmp> s;
     for (long long i = 0; i < n; i++)
     {
         long long x;
