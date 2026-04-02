@@ -57,6 +57,8 @@ void solve()
     long long n, k;
     cin >> n >> k;
 
+    vector<pair<long long, long long>> monsters;
+    
 }
 
 int main()
