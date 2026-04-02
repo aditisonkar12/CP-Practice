@@ -57,40 +57,6 @@ void solve()
     long long n, k;
     cin >> n >> k;
 
-    set<pair<long long, long long>, cmp> s;
-    for (long long i = 1; i <= n; i++)
-    {
-        long long x;
-        cin >> x;
-        s.insert({x, i});
-    }
-
-    vector<long long> result;
-
-    while (!s.empty())
-    {
-        auto [health, index] = *s.begin();
-        s.erase(s.begin());
-
-        health -= k;
-
-        if (health <= 0)
-        {
-            result.push_back(index);
-        }
-        else
-        {
-            s.insert({health, index});
-        }
-    }
-
-    for (long long i = 0; i < result.size(); i++)
-    {
-        if (i > 0)
-            cout << " ";
-        cout << result[i];
-    }
-    cout << "\n";
 }
 
 int main()
