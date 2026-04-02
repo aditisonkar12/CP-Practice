@@ -81,16 +81,6 @@ void solve()
         {
             s.insert({health, index});
         }
-                    break;
-                }
-                if (it->first == health && it->second > index)
-                {
-                    break;
-                }
-                ++it;
-            }
-            dq.insert(it, {health, index});
-        }
     }
 
     for (long long i = 0; i < result.size(); i++)
