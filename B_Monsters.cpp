@@ -56,6 +56,7 @@ void solve()
         long long val=x%k;
         if(val==0) val=k;
 
+        monsters.push_back({val, i});
     }
 }
 
