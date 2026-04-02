@@ -42,7 +42,7 @@ void input(vector<T> &arr, int n)
     }
 }
 
-struct Cmp {
+struct cmp {
     bool operator()(const pair<ll, int> &a, const pair<ll, int> &b) const
     {
         if (a.first != b.first)
@@ -57,19 +57,12 @@ void solve()
     cin >> n >> k;
 
     set<pair<long long, long long>,cmp> s;
-    for (long long i = 0; i < n; i++)
+    for (long long i = 1; i <= n; i++)
     {
         long long x;
         cin >> x;
-        dq.push_back({x, i + 1});
+       s.insert({x, i});
     }
-
-    sort(dq.begin(), dq.end(), [](const pair<long long, long long> &a, const pair<long long, long long> &b)
-         { 
-        if(a.first != b.first) 
-            return a.first > b.first;
-            
-        return a.second < b.second; });
 
     vector<long long> result;
 
