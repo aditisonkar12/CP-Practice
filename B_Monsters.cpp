@@ -72,17 +72,15 @@ void solve()
         s.erase(s.begin());
 
         health -= k;
+        
         if (health <= 0)
         {
             result.push_back(index);
         }
         else
         {
-            auto it = dq.begin();
-            while (it != dq.end())
-            {
-                if (it->first < health)
-                {
+            s.insert({health, index});
+        }
                     break;
                 }
                 if (it->first == health && it->second > index)
