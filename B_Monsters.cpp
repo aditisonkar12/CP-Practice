@@ -58,6 +58,11 @@ void solve()
 
         monsters.push_back({val, i});
     }
+
+    sort(monsters.begin(),monsters.end(),[](auto &a, auto &b)){
+        if(a.first!=b.first) return a.first>b.first;
+        return a.second<b.second;
+    });
 }
 
 int main()
