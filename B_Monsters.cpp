@@ -66,10 +66,10 @@ void solve()
 
     vector<long long> result;
 
-    while (!dq.empty())
+    while (!s.empty())
     {
-        auto [health, index] = dq.front();
-        dq.pop_front();
+        auto [health, index] = *s.begin();
+        s.erase(s.begin());
 
         health -= k;
         if (health <= 0)
