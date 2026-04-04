@@ -54,6 +54,19 @@ void solve() {
             break;
         }
     }
+
+    long long ans=LLONG_MAX;
+    for(int i=0;i<n;i++){
+        if(s[i]=='g'){
+            long long dist;
+            if(i>ind){
+                dist=i-ind;
+            }els{
+                dist=n-ind+1;
+            }
+        }
+    }
+    cout<<ind<<endl;
 }
 
 int main() {
