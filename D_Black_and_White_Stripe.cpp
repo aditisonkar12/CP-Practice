@@ -47,11 +47,13 @@ void solve() {
     string s;
     cin>>s;
     long long whites = 0;
-    for(long long i=0;i<n;i++){
+    for(long long i=0;i<k;i++){
         if(s[i] == 'W'){
             whites++;
         }
     }
+
+    long long ans=whites;
     cout<<whites<<endl;
 }
 
