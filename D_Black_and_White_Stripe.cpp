@@ -63,7 +63,7 @@ void solve() {
         }
         ans = min(ans, whites);
     }
-    cout<<whites<<endl;
+    cout<<ans<<endl;
 }
 
 int main() {
