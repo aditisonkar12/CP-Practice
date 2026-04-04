@@ -50,6 +50,12 @@ void solve()
     string s;
     cin >> s;
 
+    if (c == 'g')
+    {
+        cout << 0 << endl;
+        return;
+    }
+
     long long ans = 0;
     for (int i = 0; i < n; i++)
     {
