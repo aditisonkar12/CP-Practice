@@ -61,12 +61,13 @@ void solve() {
             long long dist;
             if(i>ind){
                 dist=i-ind;
-            }els{
+            }else{
                 dist=n-ind+1;
             }
+            ans=min(ans,dist);
         }
     }
-    cout<<ind<<endl;
+    cout<<ans<<endl;
 }
 
 int main() {
