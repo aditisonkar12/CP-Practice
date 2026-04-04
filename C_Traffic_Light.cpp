@@ -54,7 +54,6 @@ void solve() {
             break;
         }
     }
-    cout<<ind<<endl;
 }
 
 int main() {
