@@ -54,6 +54,15 @@ void solve() {
     }
 
     long long ans=whites;
+    for(long long i=k;i<n;i++){
+        if(s[i] == 'W'){
+            whites++;
+        }
+        if(s[i-k] == 'W'){
+            whites--;
+        }
+        ans = min(ans, whites);
+    }
     cout<<whites<<endl;
 }
 
