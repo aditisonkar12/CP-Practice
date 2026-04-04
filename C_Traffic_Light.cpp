@@ -56,22 +56,21 @@ void solve()
         return;
     }
 
+    string temp = s + s;
+    long long next_g = -1;
     long long ans = 0;
-    for (int i = 0; i < n; i++)
+
+    for (int i = 2 * n - 1; i >= 0; i--)
     {
-        if (s[i] == c)
+        if (temp[i] == 'g')
+            next_g = i;
+
+        if (temp[i] == c)
         {
-            long long dist = 0;
-            for (int j = 1; j <= n; j++)
+            if (next_g != -1)
             {
-                int ind = (i + j) % n;
-                if (s[ind] == 'g')
-                {
-                    dist = j;
-                    break;
-                }
+                ans = max(ans, next_g - i);
             }
-            ans = max(ans, dist);
         }
     }
     cout << ans << endl;
