@@ -44,6 +44,9 @@ void solve() {
     long long n;
     char c;
     cin>> n >> c;
+    string s;
+    cin>>s;
+
 }
 
 int main() {
