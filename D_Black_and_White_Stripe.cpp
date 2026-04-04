@@ -34,45 +34,55 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
-    long long n,k;
-    cin>>n>>k;
+void solve()
+{
+    long long n, k;
+    cin >> n >> k;
 
     string s;
-    cin>>s;
+    cin >> s;
     long long whites = 0;
-    for(long long i=0;i<k;i++){
-        if(s[i] == 'W'){
+    for (long long i = 0; i < k; i++)
+    {
+        if (s[i] == 'W')
+        {
             whites++;
         }
     }
 
-    long long ans=whites;
-    for(long long i=k;i<n;i++){
-        if(s[i] == 'W'){
+    long long ans = whites;
+    for (long long i = k; i < n; i++)
+    {
+        if (s[i] == 'W')
+        {
             whites++;
         }
-        if(s[i-k] == 'W'){
+        if (s[i - k] == 'W')
+        {
             whites--;
         }
         ans = min(ans, whites);
     }
-    cout<<ans<<endl;
+    cout << ans << endl;
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
