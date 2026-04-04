@@ -34,49 +34,61 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     long long n;
     char c;
-    cin>> n >> c;
+    cin >> n >> c;
     string s;
-    cin>>s;
+    cin >> s;
 
-    int ind=-1;
-    for(int i=0;i<n;i++){
-        if(s[i]==c){
-            ind=i;
+    int ind = -1;
+    for (int i = 0; i < n; i++)
+    {
+        if (s[i] == c)
+        {
+            ind = i;
             break;
         }
     }
 
-    long long ans=LLONG_MAX;
-    for(int i=0;i<n;i++){
-        if(s[i]=='g'){
+    long long ans = LLONG_MAX;
+    for (int i = 0; i < n; i++)
+    {
+        if (s[i] == 'g')
+        {
             long long dist;
-            if(i>ind){
-                dist=i-ind;
-            }else{
-                dist=n-ind+1;
+            if (i > ind)
+            {
+                dist = i - ind;
             }
-            ans=min(ans,dist);
+            else
+            {
+                dist = n - ind + 1;
+            }
+            ans = min(ans, dist);
         }
     }
-    cout<<ans<<endl;
+    cout << ans << endl;
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
