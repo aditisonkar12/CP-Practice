@@ -46,7 +46,13 @@ void solve() {
 
     string s;
     cin>>s;
-    
+    long long count = 0;
+    for(long long i=0;i<n;i++){
+        if(s[i] == 'B'){
+            count++;
+        }
+    }
+    cout<<count<<endl;
 }
 
 int main() {
