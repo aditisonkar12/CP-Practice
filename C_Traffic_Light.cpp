@@ -58,7 +58,12 @@ void solve()
             long long dist;
             for(int j=1;j<=n;j++){
                 int ind=(i+j)%n;
+                if(s[ind]=='g'){
+                    dist=j;
+                    break;
+                }
             }
+            ans = max(ans, dist);
         }
     }
     cout << ans << endl;
