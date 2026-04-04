@@ -46,13 +46,13 @@ void solve() {
 
     string s;
     cin>>s;
-    long long count = 0;
+    long long whites = 0;
     for(long long i=0;i<n;i++){
-        if(s[i] == 'B'){
-            count++;
+        if(s[i] == 'W'){
+            whites++;
         }
     }
-    cout<<count<<endl;
+    cout<<whites<<endl;
 }
 
 int main() {
