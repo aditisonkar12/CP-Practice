@@ -47,6 +47,14 @@ void solve() {
     string s;
     cin>>s;
 
+    int ind=-1;
+    for(int i=0;i<n;i++){
+        if(s[i]==c){
+            ind=i;
+            break;
+        }
+    }
+    cout<<ind<<endl;
 }
 
 int main() {
