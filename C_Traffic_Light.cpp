@@ -50,31 +50,15 @@ void solve()
     string s;
     cin >> s;
 
-    int ind = -1;
+    long long ans = 0;
     for (int i = 0; i < n; i++)
     {
-        if (s[i] == c)
-        {
-            ind = i;
-            break;
-        }
-    }
-
-    long long ans = LLONG_MAX;
-    for (int i = 0; i < n; i++)
-    {
-        if (s[i] == 'g')
+        if (s[i] == 'c')
         {
             long long dist;
-            if (i > ind)
-            {
-                dist = i - ind;
+            for(int j=1;j<=n;j++){
+                int ind=(i+j)%n;
             }
-            else
-            {
-                dist = n - ind + 1;
-            }
-            ans = min(ans, dist);
         }
     }
     cout << ans << endl;
