@@ -71,6 +71,7 @@ void solve()
         }
         ans = min(ans, whites);
     }
+    
     cout << ans << endl;
 }
 
