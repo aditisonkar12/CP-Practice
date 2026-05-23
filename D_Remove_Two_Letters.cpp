@@ -46,8 +46,10 @@ void solve() {
     string s;
     cin>>s;
 
-    for(int i=0;i<n;i++){
-        
+    for(int i=0;i<n-2;i++){
+        if(s[i] != s[i+2]){
+
+        }
     }
 }
 
