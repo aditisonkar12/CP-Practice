@@ -54,7 +54,7 @@ void solve()
     {
         for (int j = 0; j < n; j++)
         {
-            if (arr[j] - arr[i] == j - 1)
+            if (arr[j] - arr[i] == j - i)
                 cnt++;
         }
     }
