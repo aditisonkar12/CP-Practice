@@ -46,6 +46,8 @@ void solve()
 {
     int n;
     cin>>n;
+    vi arr(n);
+    input(arr, n);
 }
 
 int main()
