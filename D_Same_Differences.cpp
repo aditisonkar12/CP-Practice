@@ -48,6 +48,8 @@ void solve()
     cin>>n;
     vi arr(n);
     input(arr, n);
+
+    int cnt=0;
 }
 
 int main()
