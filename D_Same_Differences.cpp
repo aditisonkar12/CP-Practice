@@ -55,6 +55,7 @@ void solve()
                 if(arr[j]-arr[i]==j-1) cnt++;
         }
     }
+    cout<<cnt<<endl;
 }
 
 int main()
