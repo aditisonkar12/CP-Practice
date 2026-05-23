@@ -53,6 +53,8 @@ void solve() {
             ans++;
         }
     }
+
+    cout<<ans<<endl;
 }
 
 int main() {
