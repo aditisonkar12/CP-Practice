@@ -45,6 +45,10 @@ void solve() {
     cin>>n;
     string s;
     cin>>s;
+
+    for(int i=0;i<n;i++){
+        
+    }
 }
 
 int main() {
