@@ -53,9 +53,13 @@ void solve()
     int i = 0, j = 0;
     while (i < j)
     {
-        if (arr[j] - arr[i] == j - 1)
+        if (arr[j] - arr[i] == j - 1){ 
             cnt++;
+            j++;
+        }
+        i++;
     }
+    cout<<cnt<<endl;
 }
 
 int main()
