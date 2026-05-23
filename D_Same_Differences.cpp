@@ -45,17 +45,20 @@ void input(vector<T> &arr, int n)
 void solve()
 {
     int n;
-    cin>>n;
+    cin >> n;
     vi arr(n);
     input(arr, n);
 
-    int cnt=0;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-                if(arr[j]-arr[i]==j-1) cnt++;
+    int cnt = 0;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (arr[j] - arr[i] == j - 1)
+                cnt++;
         }
     }
-    cout<<cnt<<endl;
+    cout << cnt << endl;
 }
 
 int main()
