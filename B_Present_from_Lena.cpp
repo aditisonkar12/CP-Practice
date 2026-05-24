@@ -47,7 +47,6 @@ void printLine(int i, int n)
     // Leading spaces
     for (int s = 0; s < (n - i) * 2; s++)
         cout << " ";
-
     // Numbers
     for (int j = 0; j <= i; j++)
     {
