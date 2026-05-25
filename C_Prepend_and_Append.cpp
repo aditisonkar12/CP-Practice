@@ -53,8 +53,8 @@ void solve() {
             i++;
             j--;
         }else{
-            temp+s[i];
-            temp+s[j];
+            temp+=s[i];
+            temp+=s[j];
             i++;
             j--;
         }
