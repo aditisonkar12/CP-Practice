@@ -45,6 +45,21 @@ void solve() {
     cin>>n;
     string s;
     cin>>s;
+
+    int i=0,j=n-1;
+    string temp="";
+    while(i<j){
+        if((s[i]=='0' && s[j]=='1') || (s[i]=='1' && s[j]=='0')){
+            i++;
+            j--;
+        }else{
+            temp+s[i];
+            temp+s[j];
+            i++;
+            j--;
+        }
+    }
+    cout<<temp.length()<<endl;
 }
 
 int main() {
