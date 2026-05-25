@@ -53,13 +53,10 @@ void solve() {
             i++;
             j--;
         }else{
-            temp+=s[i];
-            temp+=s[j];
-            i++;
-            j--;
+            break;
         }
     }
-    cout<<temp.length()<<endl;
+    cout<<j-i+1<<endl;
 }
 
 int main() {
