@@ -50,7 +50,7 @@ void solve() {
     occupied[arr[0]]=1;
 
     for(int i=1;i<n;i++){
-        if(!occupied[a[i]-1] && !occupied[a[i]+1]){
+        if(!occupied[arr[i]-1] && !occupied[arr[i]+1]){
             cout<<"NO"<<"\n";
             return;
         }
