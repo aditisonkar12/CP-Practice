@@ -34,22 +34,27 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     int n;
-    cin>>n;
+    cin >> n;
     vi arr(n);
-    input(arr,n);
+    input(arr, n);
 
     vi ans;
-    int left=0,right=n-1;
-    while(left<right){
-        if(left==right){
+    int left = 0, right = n - 1;
+    while (left < right)
+    {
+        if (left == right)
+        {
             ans.push_back(arr[left]);
             left++;
             right--;
@@ -59,15 +64,18 @@ void solve() {
         ans.push_back(arr[right]);
         right--;
     }
+    cout << ans << endl;
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
