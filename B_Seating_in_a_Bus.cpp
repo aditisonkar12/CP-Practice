@@ -47,7 +47,16 @@ void solve() {
     input(arr,n);
 
     vi occupied(n+2,0);
-    
+    occupied[a[0]]=1;
+
+    for(int i=1;i<n;i++){
+        if(!occupied[a[i]-1] && !occupied[a[i]+1]){
+            cout<<"NO"<<"\n";
+            return;
+        }
+        occupied[a[i]]=1;
+    }
+    cout<<"YES"<<"\n";
 }
 
 int main() {
