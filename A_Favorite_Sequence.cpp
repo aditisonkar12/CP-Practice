@@ -51,13 +51,14 @@ void solve()
 
     vi ans;
     int left = 0, right = n - 1;
-    while (left < right)
+    while (left <= right)
     {
         if (left == right)
         {
             ans.push_back(arr[left]);
             left++;
             right--;
+            break;
         }
         ans.push_back(arr[left]);
         left++;
