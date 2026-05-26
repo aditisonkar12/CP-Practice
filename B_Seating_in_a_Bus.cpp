@@ -34,38 +34,45 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     int n;
-    cin>>n;
+    cin >> n;
     vi arr(n);
-    input(arr,n);
+    input(arr, n);
 
-    vi occupied(n+2,0);
-    occupied[arr[0]]=1;
+    vi occupied(n + 2, 0);
+    occupied[arr[0]] = 1;
 
-    for(int i=1;i<n;i++){
-        if(!occupied[arr[i]-1] && !occupied[arr[i]+1]){
-            cout<<"NO"<<"\n";
+    for (int i = 1; i < n; i++)
+    {
+        if (!occupied[arr[i] - 1] && !occupied[arr[i] + 1])
+        {
+            cout << "NO" << "\n";
             return;
         }
-        occupied[arr[i]]=1;
+        occupied[arr[i]] = 1;
     }
-    cout<<"YES"<<"\n";
+    cout << "YES" << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
