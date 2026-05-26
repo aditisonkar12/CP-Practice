@@ -64,7 +64,10 @@ void solve()
         ans.push_back(arr[right]);
         right--;
     }
-    cout << ans << endl;
+    
+    for(int x: ans){
+        cout<<x<<" ";
+    }
 }
 
 int main()
