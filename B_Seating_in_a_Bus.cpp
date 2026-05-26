@@ -54,7 +54,7 @@ void solve() {
             cout<<"NO"<<"\n";
             return;
         }
-        occupied[a[i]]=1;
+        occupied[arr[i]]=1;
     }
     cout<<"YES"<<"\n";
 }
