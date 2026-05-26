@@ -54,6 +54,10 @@ void solve() {
             left++;
             right--;
         }
+        ans.push_back(arr[left]);
+        left++;
+        ans.push_back(arr[right]);
+        right--;
     }
 }
 
