@@ -47,7 +47,7 @@ void solve() {
     input(arr,n);
 
     vi occupied(n+2,0);
-    occupied[a[0]]=1;
+    occupied[arr[0]]=1;
 
     for(int i=1;i<n;i++){
         if(!occupied[a[i]-1] && !occupied[a[i]+1]){
