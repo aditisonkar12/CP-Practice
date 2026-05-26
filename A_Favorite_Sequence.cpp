@@ -64,11 +64,12 @@ void solve()
         ans.push_back(arr[right]);
         right--;
     }
-    
-    for(int x: ans){
-        cout<<x<<" ";
+
+    for (int x : ans)
+    {
+        cout << x << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
 
 int main()
