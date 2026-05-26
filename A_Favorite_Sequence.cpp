@@ -45,6 +45,16 @@ void solve() {
     cin>>n;
     vi arr(n);
     input(arr,n);
+
+    vi ans;
+    int left=0,right=n-1;
+    while(left<right){
+        if(left==right){
+            ans.push_back(arr[left]);
+            left++;
+            right--;
+        }
+    }
 }
 
 int main() {
