@@ -45,6 +45,13 @@ void solve() {
     cin>>n;
     vi arr(n);
     input(arr,n);
+
+    vi temp;
+    for(int i=0;i<n;i++){
+        if(temp.empty()) temp[arr[i]]=i;
+        else{
+        }
+    }
 }
 
 int main() {
