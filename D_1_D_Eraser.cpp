@@ -49,7 +49,10 @@ void solve() {
     int ans=0;
     int i=0;
     while(i<n){
-        
+        if(s[i]=='B'){
+            ans++;
+            i+=k;
+        }
     }
 }
 
