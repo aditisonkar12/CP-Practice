@@ -45,6 +45,9 @@ void solve() {
     cin>>n>>k;
     string s;
     cin>>s;
+
+    int ans=0;
+    int i=0;
     
 }
 
