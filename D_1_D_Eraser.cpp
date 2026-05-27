@@ -48,7 +48,9 @@ void solve() {
 
     int ans=0;
     int i=0;
-    
+    while(i<n){
+        
+    }
 }
 
 int main() {
