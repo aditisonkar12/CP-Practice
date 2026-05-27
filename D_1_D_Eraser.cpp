@@ -52,6 +52,8 @@ void solve() {
         if(s[i]=='B'){
             ans++;
             i+=k;
+        }else{
+            i++;
         }
     }
 }
