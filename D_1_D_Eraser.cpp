@@ -56,6 +56,7 @@ void solve() {
             i++;
         }
     }
+    cout<<ans<<endl;
 }
 
 int main() {
