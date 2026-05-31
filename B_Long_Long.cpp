@@ -53,6 +53,17 @@ void solve() {
 
     long long ans=0;
     bool seg =false;
+
+    for(int i=0;i<n;i++){
+        if(a[i]<0){
+            if(!seg){
+                ans++;
+                seg=true;
+            }
+        }else if(a[i]>0){
+            seg=false;
+        }
+    }
 }
 
 int main() {
