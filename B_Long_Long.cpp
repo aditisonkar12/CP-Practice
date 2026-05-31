@@ -34,46 +34,57 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     long long n;
-    cin>>n;
+    cin >> n;
     vi a(n);
     input(a, n);
 
-    long long maxSum=0;
-    for(int i=0;i<n;i++){
-        maxSum+=abs(a[i]);
+    long long maxSum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        maxSum += abs(a[i]);
     }
 
-    long long ans=0;
-    bool seg =false;
+    long long ans = 0;
+    bool seg = false;
 
-    for(int i=0;i<n;i++){
-        if(a[i]<0){
-            if(!seg){
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] < 0)
+        {
+            if (!seg)
+            {
                 ans++;
-                seg=true;
+                seg = true;
             }
-        }else if(a[i]>0){
-            seg=false;
+        }
+        else if (a[i] > 0)
+        {
+            seg = false;
         }
     }
-    cout<<maxSum<<" "<<ans<<"\n";
+    cout << maxSum << " " << ans << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
