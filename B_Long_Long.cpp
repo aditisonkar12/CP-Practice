@@ -45,6 +45,11 @@ void solve() {
     cin>>n;
     vi a(n);
     input(a, n);
+
+    long long maxSum=0;
+    for(int i=0;i<n;i++){
+        maxSum+=abs(a[i]);
+    }
 }
 
 int main() {
