@@ -64,6 +64,7 @@ void solve() {
             seg=false;
         }
     }
+    cout<<maxSum<<" "<<ans<<"\n";
 }
 
 int main() {
