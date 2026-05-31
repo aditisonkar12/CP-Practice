@@ -50,6 +50,17 @@ void solve() {
     for(int i=0;i<n;i++){
         maxSum+=abs(a[i]);
     }
+
+    long long end=0;
+    long long ans=0;
+    while(end<n){
+        if(a[end]<0 || a[end]==0){
+            end++;
+        }else{
+            ans++;
+            end++;
+        }
+    }
 }
 
 int main() {
