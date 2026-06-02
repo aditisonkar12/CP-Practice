@@ -56,6 +56,10 @@ void solve() {
         int y=k-x;
 
         if(freq.find(y)==freq.end()) continue;
+
+        if(x==y){
+            ans+=freq[x]/2;
+        }
     }
     cout<<ans<<"\n";
 }
