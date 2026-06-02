@@ -45,6 +45,13 @@ void solve() {
     cin>>n;
     vi a(n);
     input(a, n);
+
+    vll temp;
+    for(int i=0;i<n;i++){
+        if(temp.empty() || temp.back()!= a[i]){
+            temp.push_back(a[i]);
+        }
+    }
 }
 
 int main() {
