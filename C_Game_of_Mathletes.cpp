@@ -50,15 +50,10 @@ void solve() {
     for(int i=0;i<n;i++){
         freq[a[i]]++;
     }
+
     int ans=0;
-    for(int i=0;i<n;i++){
-        if(freq[k-a[i]]>0){
-            ans++;
-            freq[a[i]]--;
-        }else if(a[i]==k-a[i] && freq[a[i]]>1){
-            ans++;
-            freq[a[i]]-=2;
-        }
+    for(auto&[x,cnt]:freq){
+        int y=k-x;
     }
     cout<<ans<<"\n";
 }
