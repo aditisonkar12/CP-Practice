@@ -55,8 +55,8 @@ void solve() {
 
     int ans=0;
     for(int i=0;i<temp.size();i++){
-        bool left=(i=0 || temp[i]<temp[i-1]);
-        bool right=(i=temp.size()-1 || temp[i]<temp[i+1]);
+        bool left=(i==0 || temp[i]<temp[i-1]);
+        bool right=(i==(temp.size()-1) || temp[i]<temp[i+1]);
 
         if(left && right) ans++;
     }
