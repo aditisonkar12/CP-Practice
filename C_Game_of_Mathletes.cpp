@@ -54,6 +54,8 @@ void solve() {
     int ans=0;
     for(auto&[x,cnt]:freq){
         int y=k-x;
+
+        if(freq.find(y)==freq.end()) continue;
     }
     cout<<ans<<"\n";
 }
