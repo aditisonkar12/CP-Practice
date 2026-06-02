@@ -60,7 +60,7 @@ void solve() {
 
         if(left && right) ans++;
     }
-    cout<<(ans==1?"YES":"NO")<<endl;
+    cout<<(ans==1?"YES":"NO")<<"\n";
 }
 
 int main() {
