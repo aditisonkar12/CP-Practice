@@ -50,6 +50,13 @@ void solve() {
     for(int i=0;i<n;i++){
         freq[a[i]]++;
     }
+    int ans=0;
+    for(auto it:freq){
+        if(it.second>k){
+            ans+=(it.second-k);
+        }
+    }
+    cout<<ans<<"\n";
 }
 
 int main() {
