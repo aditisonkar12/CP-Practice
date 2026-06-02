@@ -34,42 +34,51 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     int n;
-    cin>>n;
+    cin >> n;
     vi a(n);
     input(a, n);
 
     vll temp;
-    for(int i=0;i<n;i++){
-        if(temp.empty() || temp.back()!= a[i]){
+    for (int i = 0; i < n; i++)
+    {
+        if (temp.empty() || temp.back() != a[i])
+        {
             temp.push_back(a[i]);
         }
     }
 
-    int ans=0;
-    for(int i=0;i<temp.size();i++){
-        bool left=(i==0 || temp[i]<temp[i-1]);
-        bool right=(i==(temp.size()-1) || temp[i]<temp[i+1]);
+    int ans = 0;
+    for (int i = 0; i < temp.size(); i++)
+    {
+        bool left = (i == 0 || temp[i] < temp[i - 1]);
+        bool right = (i == (temp.size() - 1) || temp[i] < temp[i + 1]);
 
-        if(left && right) ans++;
+        if (left && right)
+            ans++;
     }
-    cout<<(ans==1?"YES":"NO")<<"\n";
+    cout << (ans == 1 ? "YES" : "NO") << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
