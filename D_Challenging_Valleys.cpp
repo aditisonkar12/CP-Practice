@@ -57,7 +57,10 @@ void solve() {
     for(int i=0;i<temp.size();i++){
         bool left=(i=0 || temp[i]<temp[i-1]);
         bool right=(i=temp.size()-1 || temp[i]<temp[i+1]);
+
+        if(left && right) ans++;
     }
+    cout<<(ans==1?"YES":"NO")<<endl;
 }
 
 int main() {
