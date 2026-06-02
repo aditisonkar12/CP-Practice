@@ -59,6 +59,8 @@ void solve() {
 
         if(x==y){
             ans+=freq[x]/2;
+        }else if(x<y){
+            ans+=min(freq[x],freq[y]);
         }
     }
     cout<<ans<<"\n";
