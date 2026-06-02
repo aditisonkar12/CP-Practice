@@ -34,45 +34,56 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
-    int n,k;
-    cin>>n>>k;
+void solve()
+{
+    int n, k;
+    cin >> n >> k;
     vi a(n);
-    input(a,n);
+    input(a, n);
 
-    unordered_map<int,int> freq;
-    for(int i=0;i<n;i++){
+    unordered_map<int, int> freq;
+    for (int i = 0; i < n; i++)
+    {
         freq[a[i]]++;
     }
 
-    int ans=0;
-    for(auto&[x,cnt]:freq){
-        int y=k-x;
+    int ans = 0;
+    for (auto &[x, cnt] : freq)
+    {
+        int y = k - x;
 
-        if(freq.find(y)==freq.end()) continue;
+        if (freq.find(y) == freq.end())
+            continue;
 
-        if(x==y){
-            ans+=freq[x]/2;
-        }else if(x<y){
-            ans+=min(freq[x],freq[y]);
+        if (x == y)
+        {
+            ans += freq[x] / 2;
+        }
+        else if (x < y)
+        {
+            ans += min(freq[x], freq[y]);
         }
     }
-    cout<<ans<<"\n";
+    cout << ans << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
