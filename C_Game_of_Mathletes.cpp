@@ -45,6 +45,11 @@ void solve() {
     cin>>n>>k;
     vi a(n);
     input(a,n);
+
+    unordered_map<int,int> freq;
+    for(int i=0;i<n;i++){
+        freq[a[i]]++;
+    }
 }
 
 int main() {
