@@ -52,9 +52,12 @@ void solve() {
     }
     int ans=0;
     for(int i=0;i<n;i++){
-        if(a[i]!=k-a[i]){
+        if(freq[k-a[i]]>0){
             ans++;
             freq[a[i]]--;
+        }else if(a[i]==k-a[i] && freq[a[i]]>1){
+            ans++;
+            freq[a[i]]-=2;
         }
     }
     cout<<ans<<"\n";
