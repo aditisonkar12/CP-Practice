@@ -47,6 +47,8 @@ void solve() {
     input(a,n);
 
     sort(a.begin(),a.end());
+    ll ans=0;
+    vector<ll> prefixSum(n+1,0);
 }
 
 int main() {
