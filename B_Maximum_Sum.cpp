@@ -49,6 +49,10 @@ void solve() {
     sort(a.begin(),a.end());
     ll ans=0;
     vector<ll> prefixSum(n+1,0);
+
+    for(int i=0;i<n;i++){
+        prefixSum[i+1]=prefixSum[i]+a[i];
+    }
 }
 
 int main() {
