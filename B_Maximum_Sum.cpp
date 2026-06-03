@@ -34,43 +34,50 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
-    int n,k;
-    cin>>n>>k;
+void solve()
+{
+    int n, k;
+    cin >> n >> k;
     vi a(n);
-    input(a,n);
+    input(a, n);
 
-    sort(a.begin(),a.end());
-    ll ans=0;
-    vector<ll> prefixSum(n+1,0);
+    sort(a.begin(), a.end());
+    ll ans = 0;
+    vector<ll> prefixSum(n + 1, 0);
 
-    for(int i=0;i<n;i++){
-        prefixSum[i+1]=prefixSum[i]+a[i];
+    for (int i = 0; i < n; i++)
+    {
+        prefixSum[i + 1] = prefixSum[i] + a[i];
     }
 
-    for(int i=0;i<=k;i++){
-        int left=2*(k-i);
-        int right=n-i-1;
+    for (int i = 0; i <= k; i++)
+    {
+        int left = 2 * (k - i);
+        int right = n - i - 1;
 
-        ll curr=prefixSum[right+1]-prefixSum[left];
-        ans=max(ans,curr);
+        ll curr = prefixSum[right + 1] - prefixSum[left];
+        ans = max(ans, curr);
     }
-    cout<<ans<<"\n";
+    cout << ans << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
