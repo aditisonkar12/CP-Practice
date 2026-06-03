@@ -45,6 +45,8 @@ void solve() {
     cin>>n>>k;
     vi a(n);
     input(a,n);
+
+    sort(a.begin(),a.end());
 }
 
 int main() {
