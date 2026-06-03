@@ -61,6 +61,7 @@ void solve() {
         ll curr=prefixSum[right+1]-prefixSum[left];
         ans=max(ans,curr);
     }
+    cout<<ans<<"\n";
 }
 
 int main() {
