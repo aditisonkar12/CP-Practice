@@ -53,6 +53,11 @@ void solve() {
     for(int i=0;i<n;i++){
         prefixSum[i+1]=prefixSum[i]+a[i];
     }
+
+    for(int i=0;i<=k;i++){
+        int left=2*(k-i);
+        int right=n-i-1;
+    }
 }
 
 int main() {
