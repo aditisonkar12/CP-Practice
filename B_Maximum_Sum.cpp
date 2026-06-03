@@ -59,6 +59,7 @@ void solve() {
         int right=n-i-1;
 
         ll curr=prefixSum[right+1]-prefixSum[left];
+        ans=max(ans,curr);
     }
 }
 
