@@ -57,7 +57,7 @@ void solve() {
             return;
         }
     }
-    
+    cout<<"NO"<<"\n";
 }
 
 int main() {
