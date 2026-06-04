@@ -34,39 +34,47 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
+void solve()
+{
     int n;
-    cin>>n;
+    cin >> n;
     vi a(n);
     input(a, n);
 
-    int total=0;
-    for(int square:a){
-        total+=square;
+    int total = 0;
+    for (int square : a)
+    {
+        total += square;
     }
 
-    for(int i=1;i<=n;i++){
-        if((i*i)==total){
-            cout<<"YES"<<"\n";
+    for (int i = 1; i * i <= total; i++)
+    {
+        if ((i * i) == total)
+        {
+            cout << "YES" << "\n";
             return;
         }
     }
-    cout<<"NO"<<"\n";
+    cout << "NO" << "\n";
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
