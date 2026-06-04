@@ -43,6 +43,15 @@ void input(vector<T> &arr, int n) {
 void solve() {
     int n;
     cin>>n;
+    int ans=0;
+
+    if(n%4!=0){
+        ans+=n/4;
+        n=n%4;
+        ans+=n/2;
+    }else{
+        ans+=n/4;
+    }
 }
 
 int main() {
