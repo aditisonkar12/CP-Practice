@@ -55,13 +55,11 @@ void solve()
         total += square;
     }
 
-    for (int i = 1; i * i <= total; i++)
+    long long root = sqrt(total);
+    if (root * root == total)
     {
-        if ((i * i) == total)
-        {
-            cout << "YES" << "\n";
-            return;
-        }
+        cout << "YES" << "\n";
+        return;
     }
     cout << "NO" << "\n";
 }
