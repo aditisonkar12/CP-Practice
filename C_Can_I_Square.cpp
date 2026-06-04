@@ -52,7 +52,7 @@ void solve() {
     }
 
     for(int i=1;i<=n;i++){
-        if(total%(i*i)==0){
+        if((i*i)==total){
             cout<<"YES"<<"\n";
             return;
         }
