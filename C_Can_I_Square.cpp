@@ -45,6 +45,19 @@ void solve() {
     cin>>n;
     vi a(n);
     input(a, n);
+
+    int total=0;
+    for(int square:a){
+        total+=square;
+    }
+
+    for(int i=1;i<=n;i++){
+        if(total%(i*i)==0){
+            cout<<"YES"<<"\n";
+            return;
+        }
+    }
+    
 }
 
 int main() {
