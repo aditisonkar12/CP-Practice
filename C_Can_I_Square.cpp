@@ -49,7 +49,7 @@ void solve()
     vi a(n);
     input(a, n);
 
-    int total = 0;
+    long long total = 0;
     for (int square : a)
     {
         total += square;
