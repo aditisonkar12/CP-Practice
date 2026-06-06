@@ -43,6 +43,10 @@ void input(vector<T> &arr, int n) {
 void solve() {
     ll n,a,b,c;
     cin>>n>>a>>b>>c;
+
+    ll full=a+b+c;   
+    ll days=(n/full)*3;
+    ll rem=n%full; 
 }
 
 int main() {
