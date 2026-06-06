@@ -34,43 +34,52 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 
 template <typename T>
-void input(vector<T> &arr, int n) {
-     for (int i = 0; i < n; i++) {
-         cin >> arr[i];
-     }
+void input(vector<T> &arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 }
 
-void solve() {
-    ll n,a,b,c;
-    cin>>n>>a>>b>>c;
+void solve()
+{
+    ll n, a, b, c;
+    cin >> n >> a >> b >> c;
 
-    ll full=a+b+c;   
-    ll days=(n/full)*3;
-    ll rem=n%full; 
+    ll full = a + b + c;
+    ll days = (n / full) * 3;
+    ll rem = n % full;
 
-    if(rem==0){
-        cout<<days<<"\n";
+    if (rem == 0)
+    {
+        cout << days << "\n";
         return;
     }
 
-    if(rem<=a){
-        cout<<days+1<<"\n";
+    if (rem <= a)
+    {
+        cout << days + 1 << "\n";
     }
-    else if(rem<=a+b){
-        cout<<days+2<<"\n";
+    else if (rem <= a + b)
+    {
+        cout << days + 2 << "\n";
     }
-    else{
-        cout<<days+3<<"\n";
+    else
+    {
+        cout << days + 3 << "\n";
     }
 }
 
-int main() {
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(0);
 
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
