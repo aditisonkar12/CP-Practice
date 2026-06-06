@@ -41,7 +41,8 @@ void input(vector<T> &arr, int n) {
 }
 
 void solve() {
-    
+    ll n,a,b,c;
+    cin>>n>>a>>b>>c;
 }
 
 int main() {
