@@ -52,6 +52,16 @@ void solve() {
         cout<<days<<"\n";
         return;
     }
+
+    if(rem<=a){
+        cout<<days+1<<"\n";
+    }
+    else if(rem<=a+b){
+        cout<<days+2<<"\n";
+    }
+    else{
+        cout<<days+3<<"\n";
+    }
 }
 
 int main() {
