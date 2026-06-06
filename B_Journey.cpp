@@ -47,6 +47,11 @@ void solve() {
     ll full=a+b+c;   
     ll days=(n/full)*3;
     ll rem=n%full; 
+
+    if(rem==0){
+        cout<<days<<"\n";
+        return;
+    }
 }
 
 int main() {
