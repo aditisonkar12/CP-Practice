@@ -43,6 +43,9 @@ void input(vector<T> &arr, int n) {
 void solve() {
     int n;
     cin>>n;
+    
+    vi parent(n+1);
+    parent[1] = 0;
 }
 
 int main() {
