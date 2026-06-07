@@ -46,6 +46,10 @@ void solve() {
     
     vi parent(n+1);
     parent[1] = 0;
+
+    for(int i=2; i<=n; i++) {
+        cin>>parent[i];
+    }
 }
 
 int main() {
