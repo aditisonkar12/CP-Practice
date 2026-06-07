@@ -53,6 +53,11 @@ void solve() {
 
     vi path;
     int node = n;
+
+    while(node!=0){
+        path.push_back(node);
+        node = parent[node];
+    }
 }
 
 int main() {
