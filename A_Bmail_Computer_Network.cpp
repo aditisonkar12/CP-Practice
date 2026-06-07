@@ -60,6 +60,11 @@ void solve() {
     }
 
     reverse(path.begin(), path.end());
+
+    for(int i=0; i<path.size(); i++) {
+        cout<<path[i]<<" ";
+    }
+    cout<<"\n";
 }
 
 int main() {
