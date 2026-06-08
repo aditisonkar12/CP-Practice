@@ -50,7 +50,6 @@ void solve() {
     for(int i=2; i<=n; i++) {
         cin>>parent[i];
     }
-
     vi path;
     int node = n;
 
