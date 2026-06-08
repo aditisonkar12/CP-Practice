@@ -58,7 +58,6 @@ void solve() {
         path.push_back(node);
         node = parent[node];
     }
-
     reverse(path.begin(), path.end());
 
     for(int i=0; i<path.size(); i++) {
