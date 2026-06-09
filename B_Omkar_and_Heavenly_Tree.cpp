@@ -60,6 +60,12 @@ void solve()
             break;
         }
     }
+
+    for(int i=1;i<=n;i++){
+        if(i!=root){
+            cout<<root<<" "<<i<<"\n";
+        }
+    }
 }
 
 int main()
