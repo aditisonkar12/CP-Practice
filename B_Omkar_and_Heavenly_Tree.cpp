@@ -44,6 +44,8 @@ void input(vector<T> &arr, int n)
 
 void solve()
 {
+    int n,m;
+    cin>>n>>m;
 }
 
 int main()
