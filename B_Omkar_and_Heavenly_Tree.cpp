@@ -47,6 +47,7 @@ void solve()
     int n, m;
     cin >> n >> m;
     vi temp(n + 1, 0);
+    
     for (int i = 0; i < m; i++)
     {
         int a, b, c;
