@@ -54,7 +54,12 @@ void solve()
     }
 
     int root=-1;
-    
+    for(int i=1;i<=n;i++){
+        if(!temp[i]){
+            root=i;
+            break;
+        }
+    }
 }
 
 int main()
