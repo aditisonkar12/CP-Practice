@@ -44,26 +44,31 @@ void input(vector<T> &arr, int n)
 
 void solve()
 {
-    int n,m;
-    cin>>n>>m;
-    vi temp(n+1,0);
-    for(int i=0; i<m; i++) {
-        int a,b,c;
-        cin>>a>>b>>c;
-        temp[b]=1;
+    int n, m;
+    cin >> n >> m;
+    vi temp(n + 1, 0);
+    for (int i = 0; i < m; i++)
+    {
+        int a, b, c;
+        cin >> a >> b >> c;
+        temp[b] = 1;
     }
 
-    int root=-1;
-    for(int i=1;i<=n;i++){
-        if(!temp[i]){
-            root=i;
+    int root = -1;
+    for (int i = 1; i <= n; i++)
+    {
+        if (!temp[i])
+        {
+            root = i;
             break;
         }
     }
 
-    for(int i=1;i<=n;i++){
-        if(i!=root){
-            cout<<root<<" "<<i<<"\n";
+    for (int i = 1; i <= n; i++)
+    {
+        if (i != root)
+        {
+            cout << root << " " << i << "\n";
         }
     }
 }
