@@ -54,7 +54,6 @@ void solve()
         cin >> a >> b >> c;
         temp[b] = 1;
     }
-
     int root = -1;
     for (int i = 1; i <= n; i++)
     {
