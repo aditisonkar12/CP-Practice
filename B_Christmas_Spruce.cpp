@@ -38,6 +38,7 @@ void input(vector<T> &arr, int n) {
      for (int i = 0; i < n; i++) {
          cin >> arr[i];
      }
+     
 }
 
 void solve() {
