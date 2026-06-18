@@ -46,9 +46,10 @@ void solve()
 {
     int t;
     cin >> t;
-    while (t--){ 
-    int n;
-    cin >> n;
+    while (t--)
+    {
+        int n;
+        cin >> n;
     }
 }
 
