@@ -46,6 +46,7 @@ void solve()
 {
     int t;
     cin >> t;
+    
     while (t--)
     {
         int n;
